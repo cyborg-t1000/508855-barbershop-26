@@ -19,7 +19,7 @@
     </ul>
     <ul>
       <li>
-        <button type="button">Войти</button>
+        <a href="login.html">Войти</a>
       </li>
     </ul>
   </nav>
@@ -33,7 +33,8 @@
     <ul>
       <li>
         <h3>Быстро</h3>
-        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
+          стрижки-минутки!</p>
       </li>
       <li>
         <h3>Круто</h3>
@@ -41,7 +42,8 @@
       </li>
       <li>
         <h3>Дорого</h3>
-        <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+        <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный
+          статус?</p>
       </li>
     </ul>
   </section>
@@ -54,7 +56,8 @@
         <time datetime="2019-01-11">11 января</time>
       </li>
       <li>
-        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши
+          стройные ряды</p>
         <time datetime="2016-01-18">18 января</time>
       </li>
     </ul>
@@ -89,9 +92,28 @@
   <section>
     <h2>Записаться</h2>
     <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-    <!-- Здесь будет форма -->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="appointment-date">Дата</label>
+        <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+      </p>
+      <p>
+        <label for="appointment-time">Время</label>
+        <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+      </p>
+      <p>
+        <label for="appointment-name">Ваше имя</label>
+        <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+      </p>
+      <p>
+        <label for="appointment-phone">Телефон</label>
+        <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
   </section>
 </main>
+
 <footer>
   <p>
     Барбершоп «Бородинский»<br>
@@ -116,14 +138,40 @@
 <section>
   <h2>Личный кабинет</h2>
   <p>Введите свой логин и пароль.</p>
-  <!-- Здесь будет форма -->
-  <button type="button">Закрыть</button>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-login">Логин</label>
+      <input id="user-login" type="text" name="login" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="user-password">Пароль</label>
+      <input id="user-password" type="password" name="password" placeholder="••••••••">
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">
+        Запомните меня
+      </label>
+      <a href="#">Я забыл пароль!</a>
+    </p>
+    <button type="submit">
+      Войти
+    </button>
+  </form>
+  <button type="button">
+    Закрыть
+  </button>
 </section>
 
 <section>
   <h2>Как до нас добраться</h2>
-  <img src="img/map.png" width="766" height="560" alt="Карта">
-  <button type="button">Закрыть</button>
+  <p>
+    <img src="img/map.png" width="780" height="560"
+         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+  </p>
+  <button type="button">
+    Закрыть
+  </button>
 </section>
 </body>
 </html>
